@@ -1,0 +1,59 @@
+{
+  "name": "cli-web-deepwiki-unified-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "cli-web-deepwiki-engine": "./server.js",
+    "cli-web-deepwiki-lsp": "./lsp.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "lsp": "node lsp.js --stdio",
+    "docs": "zod2md --title 'cli-web-deepwiki schemas' --entry schemas/index.ts --output ../../../SCHEMAS.md"
+  },
+  "dependencies": {
+    "defuddle": "^0.18.1",
+    "unified": "^11.0.5",
+    "unified-args": "^11.0.1",
+    "unified-engine": "^11.2.2",
+    "unified-language-server": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "remark-directive": "^4.0.0",
+    "remark-rehype": "^11.1.2",
+    "remark-retext": "^6.0.1",
+    "rehype-parse": "^9.0.1",
+    "rehype-remark": "^10.0.1",
+    "rehype-stringify": "^10.0.1",
+    "retext-english": "^5.0.0",
+    "retext-pos": "^5.0.0",
+    "retext-keywords": "^8.0.2",
+    "retext-readability": "^8.0.0",
+    "retext-stringify": "^4.0.0",
+    "mdast-util-to-markdown": "^2.1.2",
+    "mdast-util-from-markdown": "^2.0.3",
+    "mdast-util-frontmatter": "^2.0.1",
+    "mdast-util-gfm": "^3.1.0",
+    "mdast-util-math": "^3.0.0",
+    "mdast-util-directive": "^3.1.0",
+    "hast-util-from-html": "^2.0.3",
+    "hast-util-to-html": "^9.0.5",
+    "xast-util-from-xml": "^4.0.0",
+    "xast-util-to-xml": "^4.0.0",
+    "unist-util-visit": "^5.1.0",
+    "unist-util-select": "^5.1.0",
+    "vfile": "^6.0.3",
+    "vfile-message": "^4.0.3",
+    "yaml": "^2.8.3",
+    "zod": "^3.25.76",
+    "zod2md": "^0.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
